@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿See https://aka.ms/new-console-template for more information
 
 string kasutajanimi = "";
 do
@@ -21,7 +21,7 @@ if (kasutajanimi == "user1")
     int tsükliMuutuja = ruuduSuurus;
     do
     {
-        üksRida += 'a'+reaKujund;
+        üksRida += 'a' + reaKujund;
         tsükliMuutuja -= 1;
     } while (tsükliMuutuja != 0);
     tsükliMuutuja = ruuduSuurus;
@@ -46,7 +46,7 @@ if (kasutajaValik = 0)
 {
     Console.WriteLine("Headaega, tulge jälle");
 }
-else 
+else
 {
     Console.WriteLine("Tere tulemast MobiFix parandusautomaati! Kuidas saan aidata?");
     Console.WriteLine("0 - headaega\n1 - tahan telefoni parandada");
@@ -82,3 +82,34 @@ while (kasutajaTeinevalik < 0 && kasutajaTeinevalik > 1)
 {
 
 }
+
+
+string õigenimi = "Paul";
+string õigeParool = "Salasõna";
+Console.WriteLine("Sisesta kasutajanimi");
+string kasutajanimi1 = Console.ReadLine();
+
+if (kasutajanimi1 != õigenimi)
+{
+    Console.WriteLine("Kasutajat nimega" + kasutajanimi1 + "ei ole registeeritud");
+    
+}
+Console.WriteLine("Sisesta parool");
+string parool = Console.ReadLine();
+
+if (parool != õigeParool)
+{
+    Console.WriteLine("Vale parool" + kasutajanimi1 + "!");
+}
+Console.WriteLine("Tere tulemast" + kasutajanimi1 + "!");
+string[] Lemmikloomad = new string[3];
+int i = 0;
+
+while (i < 3)
+{
+    Console.WriteLine("Sisesta oma lemmikloomanimi(" + (i + 1) + "/3");
+    Lemmikloomad[i] = Console.ReadLine();
+    i++;
+}
+Console.WriteLine("Milline on su lemmik (1-3)");
+string valik = Console.ReadLine();
