@@ -12,11 +12,24 @@ do
     nimi = Console.ReadLine();
 } 
 while (nimi == "");
+
+Console.WriteLine("Sisesta oma sünnikuupäeva päev");
+int sünnikuupäev = 0;
+while (sünnikuupäev < 0 && sünnikuupäev > 31)
 {
-    Console.WriteLine("Mis on sinu sünnikuupäev, arvuna 1-31");
-    Console.ReadLine();
-    (kuuPäev > 1 && kuuPäev < 31);
+    Console.WriteLine("Sisesta kuupäev");
+    sünnikuupäev = int.Parse(Console.ReadLine());
 }
+
+Console.WriteLine("Sisesta ka sünnikuupäeva kuu.");
+string sünnikuu = "";
+while (sünnikuu == "")
+{
+    Console.WriteLine("Sisesta kuu");
+    sünnikuu = Console.ReadLine();
+}
+ 
+
 
 /* While
 Siis küsi kasutajalt tema sünnikuupäeva kolme while tsükliga, kõigepealt päev, arvuna, siis kuu, nimega, ning 
